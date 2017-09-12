@@ -138,13 +138,15 @@ function accelerate(n) {
 
     myGamePiece.gravity = n;
 }
-
+    
+document.addEventListener('keydown', space);
+    
 var space = function(e) {
     if(e.keyCode === 32) {
         accelerate(0.05)
     }
 }
-document.addEventListener('keydown', space);
+
 space();
 </script>
 <br>
