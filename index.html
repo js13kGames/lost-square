@@ -134,6 +134,14 @@ function accelerate(n) {
 
     myGamePiece.gravity = n;
 }
+
+var space = function() {
+    if(event.keyCode === 32) {
+        accelerate(0.05)
+    }
+}
+
+space();
 </script>
 <br>
 <button onmousedown="accelerate(-0.2)" onmouseup="accelerate(0.05)">ACCELERATE</button>
